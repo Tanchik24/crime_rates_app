@@ -62,7 +62,7 @@ def get_main_bar():
             >Посмотрим на данные</h2>''', 
             unsafe_allow_html=True)
     
-    with data_description_expanders[1].expander('Выберете исследуемые признаки:'):
+    with data_description_expanders[1].expander('Выберите исследуемые признаки:'):
         multicol = st.multiselect('Столбцы', data.columns.to_list())
         if not multicol:
             pass
